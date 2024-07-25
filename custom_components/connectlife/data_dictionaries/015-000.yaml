@@ -113,6 +113,16 @@ properties:
       device_class: duration
       unit: min
   - property: Current_program_phase
+    sensor:
+      icon: mdi:dishwasher
+      device_class: enum
+      options:
+        0: not_available
+        1: Idle
+        6: Pre-rinse
+        7: Wash
+        8: Rinse
+        2: Dry
   - property: Delay_start
     hide: true
   - property: Delay_start_remaining_time
